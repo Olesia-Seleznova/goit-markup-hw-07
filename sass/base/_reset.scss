@@ -42,7 +42,19 @@ img {
     list-style: none;
 }
 
-.page-header {
-    background-color: var(--secondary-background-color);
+.link {
+    text-decoration: none;
 }
+
+.page {
+    display: flex;
+}
+
+.main-nav  {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+
 
