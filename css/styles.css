@@ -212,7 +212,7 @@ body {
  } */
 
 /* Hero */
-.main-contenet {
+/* .main-contenet {
     margin-bottom: 0;
 }
 
@@ -243,9 +243,9 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-background-color);
-}
+}  */
 
-.btn {
+/* .btn {
     padding: 10px 25px;
 
     font-weight: 700;
@@ -270,7 +270,7 @@ body {
 .btn:focus {
     background-color:var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
-}
+}  */
 
 /* features */
 .section-title {
