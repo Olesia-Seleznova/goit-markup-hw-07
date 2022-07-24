@@ -56,5 +56,13 @@ img {
     margin-right: auto;
 }
 
+.page {
+    display: flex;
+}
 
+.page__nav  {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
 

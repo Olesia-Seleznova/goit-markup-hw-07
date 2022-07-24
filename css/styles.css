@@ -67,13 +67,13 @@ body {
 /* .section {
     padding-bottom: 94px;
     padding-top: 94px;
-} */
+}  */
 
 /* .page-header {
     background-color: var(--secondary-background-color);
-} */
+}
 
-/* .container {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -84,16 +84,16 @@ body {
 /* main-nav */
 /* .page {
     display: flex;
-}
+} */
 
-.main-nav  {
+/* .main-nav  {
     display: flex;
     align-items: center;
     margin-right: auto;
 } */
 
 /* logo */
-.page-logo {
+/* .page-logo {
     display: flex;
     margin-right: 95px;
 
@@ -112,18 +112,18 @@ body {
 .page-logo:hover,
 .page-logo:focus {
     color: #292929;   
-}
+} 
 
 .web-logo {
     color: var(--accent-color);
-}
+} */
 
 /* site nav */
 /* .link {
     text-decoration: none;
 } */
 
-.site-nav {
+/* .site-nav {
     display: flex;
 }
 
@@ -166,7 +166,7 @@ body {
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
-} 
+}  */
 
 
 /* auth-icons */
@@ -176,7 +176,7 @@ body {
 }
 
 /* auth-nav */
-.page .auth-nav {
+/* .page .auth-nav {
     display: flex;
 }
 
@@ -209,7 +209,7 @@ body {
  .auth-nav .link:hover,
  .auth-nav .link:focus {
     color: var(--accent-color);
- }
+ } */
 
 /* Hero */
 .main-contenet {

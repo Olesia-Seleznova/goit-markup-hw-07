@@ -1,0 +1,121 @@
+.page__header {
+    background-color: var(--secondary-background-color);
+}
+
+.page__logo {
+    display: flex;
+    margin-right: 95px;
+
+    color: var(--secondary-text-color); 
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.20;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+    &:hover,
+    &:focus {
+    color: #292929;   
+    } 
+}
+
+.web-logo {
+    color: var(--accent-color);
+}
+
+// site-nav
+.page__site-nav {
+    display: flex;
+
+    & .item + .item {
+        margin-left: 50px;
+    }
+}
+
+.page__site-nav .link {
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 30px;
+
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.current {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left:0;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    } 
+}
+
+// auth-nav
+.contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+/* auth-nav */
+.page .page__auth-nav {
+    display: flex;
+}
+
+.page__auth-nav .item {
+    display: flex;
+    align-items: center;
+    
+    &+ .item {
+        margin-left: 50px;
+    }
+}
+
+.page__auth-nav .link {
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    .page__auth-nav .link:focus {
+       color: var(--accent-color);
+    }
+}
+
+
+
+
+
