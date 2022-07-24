@@ -273,7 +273,7 @@ body {
 }  */
 
 /* features */
-.section-title {
+/* .section-title {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -286,10 +286,10 @@ body {
     margin: 0;
     display: flex;
     list-style: none;
-}
+} */
 
  /*прихований заголовок*/
- .visually-hidden {
+ /* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -328,7 +328,7 @@ body {
 }
 
 /* feature-icons */
-.feature-icon {
+/* .feature-icon {
     display: flex;
     margin-bottom: 30px;
     width: 270px;
@@ -338,7 +338,7 @@ body {
     justify-content: center;
     border-radius: 4px;
     background-color: #F5F4FA;
- }
+ }   */
 
 /* work */
 .about {
