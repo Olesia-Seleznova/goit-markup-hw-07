@@ -402,7 +402,7 @@ body {
 } */
 
 /* team */
-.team-section {
+/* .team-section {
     margin-top: 0;
     margin-bottom: 0;
     background-color: #F5F4FA;
@@ -456,7 +456,7 @@ body {
 .photo {
     width: 370px;
     background-color: var(--primary-text-color);
-}
+} */
 
 /* Network items */
 .social-networks {
