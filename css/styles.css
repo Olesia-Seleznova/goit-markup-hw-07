@@ -170,10 +170,10 @@ body {
 
 
 /* auth-icons */
-.contact-icon {
+/* .contact-icon {
     margin-right: 10px;
     fill: currentColor;
-}
+} */
 
 /* auth-nav */
 /* .page .auth-nav {
@@ -455,15 +455,14 @@ body {
 
 .photo {
     width: 370px;
-    height: 295px;
     background-color: var(--primary-text-color);
 }
 
 /* Network items */
 .social-networks {
     display: flex; 
-    margin-top: 30px;
-    padding-bottom: 30px; 
+    margin-top: 16px;
+    padding-bottom: 30px;   
     align-items: center;
     justify-content: center;
 }

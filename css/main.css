@@ -290,8 +290,7 @@ body.no-scroll {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.page__auth-nav .link:hover,
-.page__auth-nav .link .page__auth-nav .link:focus {
+.page__auth-nav .link:hover, .page__auth-nav .link:focus {
   color: var(--accent-color);
 }
 
