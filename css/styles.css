@@ -549,7 +549,7 @@ body {
 }    */
 
 /* footer */
-.footer-section {
+/* .footer-section {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
@@ -645,10 +645,10 @@ body {
     align-items: center;
     justify-content: center;
     fill: currentColor;
-}
+} */
 
 /* Network contacts */
-.network-contacts {
+/* .network-contacts {
     padding-bottom: 0px;
 }
 
@@ -660,7 +660,7 @@ body {
 .network-contacts > .social-networks {
     margin-top: 0;
     padding-bottom: 0;
-}
+} */
 
 /* Signup-form */
 .signup {
