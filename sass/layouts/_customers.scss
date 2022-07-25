@@ -1,0 +1,39 @@
+.customers__list {
+    display: flex;
+}
+
+.customers__li {
+    display: flex;  
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.customers__icon {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px; 
+    color: var(--icon-color);
+    background-color: var(--secondary-background-color);
+
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    }
+}
+
+.customers__company {
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+}   
