@@ -459,7 +459,7 @@ body {
 } */
 
 /* Network items */
-.social-networks {
+/* .social-networks {
     display: flex; 
     margin-top: 16px;
     padding-bottom: 30px;   
@@ -505,7 +505,7 @@ body {
     align-items: center;
     justify-content: center;
     fill: currentColor;
-}
+} */
 
 /* Customers */
 .customers-list {
