@@ -752,7 +752,7 @@ body {
 } */
 
 /* potfolio/css */
-.portfolio-container {
+/* .portfolio-container {
     display: flex;
     margin-top: 0;
     margin-bottom: 50px;
@@ -896,7 +896,7 @@ body {
 
 .portfolio-positions:hover .portfolio-overlay {
     transform: translateY(0);
-}
+} */
 
 /* Modal-window */
 /* .backdrop {
