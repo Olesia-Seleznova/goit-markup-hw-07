@@ -79,7 +79,16 @@
     fill: currentColor;
 }
 
-/* auth-nav */
+.page {
+    display: flex;
+}
+
+.page__nav  {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
 .page .page__auth-nav {
     display: flex;
 }

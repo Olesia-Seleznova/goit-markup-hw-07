@@ -1,6 +1,7 @@
 html {
 	box-sizing: border-box;
 }
+
 *,
 *::after,
 *::before {
@@ -17,14 +18,14 @@ p {
 	margin-top: 0;
 }
 
-.ul {
+ul {
 	list-style: none;
 	padding-left: 0;
     padding: 0;
 	margin: 0;
 }
 
-.a {
+a {
 	text-decoration: none;
 	color: inherit;
 }
@@ -44,32 +45,4 @@ img {
 
 .link {
     text-decoration: none;
-}
-
-.page {
-    display: flex;
-}
-
-.main-nav  {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-
-.page {
-    display: flex;
-}
-
-.page__nav  {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-
-.main-contenet {
-    margin-bottom: 0;
-}
-
-.about {
-    padding-top: 0;
 }
