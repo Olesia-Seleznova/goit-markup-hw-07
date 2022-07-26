@@ -663,7 +663,7 @@ body {
 } */
 
 /* Signup-form */
-.signup {
+/* .signup {
     display: block;
     align-content: flex-start; 
 }
@@ -749,7 +749,7 @@ body {
 
 .icon-send {
     margin-left: 10px;
-}
+} */
 
 /* potfolio/css */
 .portfolio-container {
@@ -899,7 +899,7 @@ body {
 }
 
 /* Modal-window */
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -922,9 +922,9 @@ body {
     opacity: 1;
     visibility: hidden;
     pointer-events: none;
-} 
+}  */
 
-.modal {
+/* .modal {
     position: absolute; 
     top: 50%;
     left: 50%;
@@ -956,7 +956,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     cursor: pointer;
-}
+} */
 
 /* Callback form */
 .callback-title { 
