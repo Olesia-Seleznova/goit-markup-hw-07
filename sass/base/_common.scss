@@ -27,10 +27,11 @@ body {
     transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        opacity: 1;
+        visibility: hidden;
+        pointer-events: none;
+    } 
 }
 
-.is-hidden {
-    opacity: 1;
-    visibility: hidden;
-    pointer-events: none;
-} 
