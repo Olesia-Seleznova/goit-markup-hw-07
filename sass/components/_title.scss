@@ -5,6 +5,12 @@
     list-style: none;
     color: var(--secondary-text-color);
     text-transform: uppercase;
+    
+    @media screen and (max-width: 747px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .text {
