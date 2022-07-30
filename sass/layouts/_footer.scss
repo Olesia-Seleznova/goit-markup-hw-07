@@ -18,32 +18,79 @@
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+}
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:flex-start;  
+        justify-content: space-between;
+    } 
+}
+
+.footer__connection {
+    display: block;
+    align-items: center;
+    
+
+    @media screen and (min-width: 480px) {
+        display: block;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-    } 
+        display: flex;
+        align-items: flex-start;
+    }
 }
 
 .footer__block {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 124px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        align-items: flex-start;
+    }
 }
 
 .footer__logo {
     margin-bottom: 20px;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     text-decoration: none;
     color: var(--secondary-background-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .footer__addres {
-    margin-top: 20px;
+    margin-top: 0;
     
+    @media screen and (min-width: 1200px) {
+
+    }
+
     & .list {
     margin-right: 0;
     }
@@ -136,6 +183,7 @@
 // network contacts
 .network__contacts {
     padding-bottom: 0px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,11 +194,13 @@
     }
 
     @media screen and (min-width: 768px) {
-        
+        margin-left: auto;
     }
 
     @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
         align-items:flex-start;
+
     }
 
 
