@@ -27,6 +27,20 @@
     color: var(--accent-color);
 }
 
+.page__burger {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .icon__close {
+        display: none;
+    }
+}
+
+
+
 // site-nav
 .page__site-nav {
     display: flex;
