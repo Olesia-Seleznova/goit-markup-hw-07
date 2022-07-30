@@ -1,0 +1,22 @@
+.mobile__menu-btn {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+
+}
+
+.mobile__menu-btn-close {
+    opacity: 0;
+}

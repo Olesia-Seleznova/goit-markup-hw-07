@@ -23,6 +23,17 @@
       <div class="page container">
         <nav class="page__nav">
           <a class="page__logo" href="./index.html"><span class="web-logo">Web</span>Studio</a>
+         
+          <button class="mobile__menu-btn" type="button" data-menu-button>
+            <svg width="40" height="40">
+              <use clas="mobile__menu-btn-burger" href="./images/images-icons/menu.svg#icon-burger_menu">
+              </use>
+              <use clas="mobile__menu-btn-close" href="./images/images-icons/menu.svg#con-close_menu">
+              </use>
+            </svg>
+
+          </button>
+         
           <ul class="page__site-nav list">
             <li class="item"><a href="./index.html" class="link current">Студія</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
@@ -530,8 +541,8 @@
     </div>
 
     <!--Mobile-menu-->
-    <div class="mobile-menu" data-menu>
-      <ul class="mobile-menu__nav-item list">
+    <div class="mobile-menu is-open" data-menu>
+      <ul class="mobile-menu__nav list">
         <li class="mobile-menu__nav-item">
           <a href="./index.html" class="link current">Студія</a>
         </li>
@@ -545,14 +556,14 @@
 
       <ul class="mobile-menu__contacts list">
         <li class="mobile-menu__contacts-item">
-          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          <a href="tel:+380961111111" class="link accent">+38 096 111 11 11</a>
         </li>
-        <li class="mobile-menu__contacts-item">
-          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+        <li class="mobile-menu__contacts-item ">
+          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
         </li>
       </ul>
    
-      <ul class=" mobile-menu__socials list">
+      <ul class="mobile-menu__socials list">
         <li class="mobile-menu__socials-item">
           <a class="mobile-menu__icon" href="" aria-label="Instagram">Instagram</a>
         </li>
