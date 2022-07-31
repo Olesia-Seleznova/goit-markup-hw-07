@@ -4,7 +4,6 @@
 
 .page__logo {
     display: flex;
-    margin-right: 95px;
     padding-top: 16px;
     padding-bottom: 16px;
 
@@ -24,9 +23,14 @@
     color: #292929;   
     } 
 
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+
     @media screen and (min-width: 1200px) {
         font-size: 26px;
         line-height: 1.20;
+        margin-right: 95px;
     }
 }
 
@@ -111,6 +115,10 @@
 .page__nav  {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 84px;
+    }
 }
 
 .page .page__auth-nav {
@@ -118,15 +126,13 @@
 
     @media screen and (min-width: 480px) {
        display: none;
-      
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
-        padding-top: 21px;
-        padding-bottom: 21px;
-        width: 100%
+        justify-content: center;
+        width: 100%;
     }
 
     @media screen and (min-width: 1200px) {
@@ -135,39 +141,31 @@
         flex-direction: row;
         align-items: center;
         gap: 30px;
-        width: 100%
-    }
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }    
 }
 
 .page__auth-nav .link {
-        // display: flex;
+        display: flex;
         
-        // align-items: center;
-        // font-weight: 500;
-        // font-size: 14px;
-        // line-height: 1.14;
-        // letter-spacing: 0.02em;
-        // color: #757575;
-        // text-decoration: none;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #757575;
+        text-decoration: none;
 
-        // transition-property: color;
-        // transition-duration: 250ms;
-        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:not(:last-child) {
-        @media screen and (min-width: 768px) {
-            margin-bottom: 10px;
-          }
-    }   
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
        color: var(--accent-color);
     }
-
-    @media screen and (min-width: 480px) {
-        
-     }
  
      @media screen and (min-width: 768px) {
        margin-bottom: 10px;
@@ -177,7 +175,6 @@
         padding-top: 35px;
         padding-bottom: 30px;
      }
-
 }
 
 // Mobile-menu

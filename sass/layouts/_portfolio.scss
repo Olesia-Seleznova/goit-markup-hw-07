@@ -1,12 +1,27 @@
 .portfolio__container {
     display: flex;
     margin-top: 0;
-    margin-bottom: 50px;
-    justify-content: center;
-} 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    gap: 8px;
+    padding: 0;
 
-.portfolio__nav + .portfolio__nav {
-    margin-left: 8px;
+    @media screen and (min-width: 480px) {
+        margin-bottom: 14px; 
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 34px;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
 }
 
 .portfolio__btn {
@@ -66,14 +81,46 @@
     color: var(--secondary-text-color);
 }
 
-.flex__conteiner .link {
-    display: flex;
-    width: 370px;
+.portfolio__photo {
+    background-color: var(--primary-text-color);
+    width: 100%;
 
-    margin-right: 30px;
-    margin-bottom:                                                                                                                                                                                                                                                                                                                                                       30px;
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+        height: 294px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        height: 294px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 370px;
+        height: 294px;
+    }
+}
+
+.flex__container .link {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
     border: 1px solid #EEEEEE;
     background-color: var(--secondary-background-color);
+
+    @media screen and (min-width: 480px) {
+        max-width: 450px;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+
 }
 
 .portfolio__positions {

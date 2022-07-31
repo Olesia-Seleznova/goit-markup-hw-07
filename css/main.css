@@ -71,6 +71,8 @@ img {
 }
 
 body {
+  padding-left: 15px;
+  padding-right: 15px;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -94,8 +96,6 @@ body.no-scroll {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -519,21 +519,39 @@ body.no-scroll {
   margin-left: 10px;
 }
 
-.flex__conteiner {
+.flex__container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 0;
-  width: 1200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  list-style: none;
   cursor: pointer;
 }
-.flex__conteiner:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 480px) {
+  .flex__container {
+    max-width: 480px;
+  }
 }
-.flex__conteiner:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .flex__container {
+    max-width: 768px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex__container {
+    max-width: 1200px;
+  }
 }
 
 .portfolio__overlay {
@@ -604,7 +622,6 @@ body.no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 95px;
   padding-top: 16px;
   padding-bottom: 16px;
   color: var(--secondary-text-color);
@@ -623,10 +640,16 @@ body.no-scroll {
 .page__logo:hover, .page__logo:focus {
   color: #292929;
 }
+@media screen and (min-width: 768px) {
+  .page__logo {
+    margin-right: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .page__logo {
     font-size: 26px;
     line-height: 1.2;
+    margin-right: 95px;
   }
 }
 
@@ -725,6 +748,11 @@ body.no-scroll {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .page__nav {
+    margin-right: 84px;
+  }
+}
 
 .page .page__auth-nav {
   display: none;
@@ -743,8 +771,9 @@ body.no-scroll {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
 }
@@ -765,13 +794,30 @@ body.no-scroll {
             align-items: center;
     gap: 30px;
     width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .page__auth-nav .link:not(:last-child) {
-    margin-bottom: 10px;
-  }
+.page__auth-nav .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page__auth-nav .link:hover, .page__auth-nav .link:focus {
   color: var(--accent-color);
@@ -922,11 +968,6 @@ body.no-scroll {
   margin: 0;
   display: block;
   list-style: none;
-}
-@media screen and (min-width: 480px) {
-  .features {
-    display: block;
-  }
 }
 @media screen and (min-width: 768px) {
   .features {
@@ -1175,8 +1216,6 @@ body.no-scroll {
 }
 @media screen and (max-width: 767px) {
   .photo {
-    max-width: 450px;
-    height: 460px;
     width: 100%;
   }
 }
@@ -1755,6 +1794,7 @@ body.no-scroll {
 .checkbox__label {
   display: inline-block;
   position: relative;
+  text-align: center;
 }
 
 .checkbox {
@@ -1838,14 +1878,39 @@ body.no-scroll {
   display: -ms-flexbox;
   display: flex;
   margin-top: 0;
-  margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+  gap: 8px;
+  padding: 0;
 }
-
-.portfolio__nav + .portfolio__nav {
-  margin-left: 8px;
+@media screen and (min-width: 480px) {
+  .portfolio__container {
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__container {
+    margin-bottom: 14px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__container {
+    margin-bottom: 34px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .portfolio__btn {
@@ -1904,15 +1969,56 @@ body.no-scroll {
   color: var(--secondary-text-color);
 }
 
-.flex__conteiner .link {
+.portfolio__photo {
+  background-color: var(--primary-text-color);
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__photo {
+    max-width: 450px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__photo {
+    max-width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__photo {
+    max-width: 370px;
+    height: 294px;
+  }
+}
+
+.flex__container .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 1px solid #EEEEEE;
   background-color: var(--secondary-background-color);
+}
+@media screen and (min-width: 480px) {
+  .flex__container .link {
+    max-width: 450px;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .flex__container .link {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex__container .link {
+    max-width: 1200px;
+  }
 }
 
 .portfolio__positions {

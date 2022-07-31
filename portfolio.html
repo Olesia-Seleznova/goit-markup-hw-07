@@ -20,26 +20,40 @@
     <header class="page__header">
       <div class="page container">
         <nav class="page__nav">
-        <a class="page__logo" href="./index.html"><span class="web-logo">Web</span>Studio</a>
+          <a class="page__logo" href="./index.html"><span class="web-logo">Web</span>Studio</a>
+         
+          <button class="mobile__menu-btn" type="button" data-menu-button>
+            <svg width="40" height="40">
+              <use clas="mobile__menu-btn-burger" href="./images/images-icons/menu.svg#icon-burger_menu">
+              </use>
+              <use clas="mobile__menu-btn-close" href="./images/images-icons/menu.svg#con-close_menu">
+              </use>
+            </svg>
+
+          </button>
+         
           <ul class="page__site-nav list">
-            <li class="item"><a href="./index.html" class="link current">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
             <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
 
-       <ul class="page__auth-nav list">
+        <ul class="page__auth-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"> <svg class="contact-icon" width="16" height="12">
-              <use href="./images/images-icons/sprite.svg#icon-envelope"></use>
-              </svg>info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./images/images-icons/sprite.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
 
           <li class="item">
-            <a href="tel:+380961111111" class="link"> <svg class="contact-icon" width="10" height="16">
-              <use href="./images/images-icons/sprite.svg#icon-smartphone">
-              </use>
-            </svg>+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/images-icons/sprite.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -57,12 +71,12 @@
               <li class="portfolio__nav"><button class="portfolio__btn" type="button">Маркетинг</button></li>
             </ul>
             
-            <ul class="flex__conteiner list">
+            <ul class="flex__container list">
 
               <li class="link">
                 <a class="portfolio__positions" href="" aria-level="" >
                   <div class="portfolio__relative" >
-                    <img src="./images/portfolio/img.jpg" alt="Технокряк" class="photo" />
+                    <img src="./images/portfolio/img.jpg" alt="Технокряк" class="portfolio__photo" />
                     <div class="portfolio__overlay">
                       <p class="portfolio__description">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -82,7 +96,7 @@
                     <img
                     src="./images/portfolio/img (1).jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    class="photo"/>
+                    class="portfolio__photo"/>
                     <div class="portfolio__overlay">
                       <p class="portfolio__description">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -102,7 +116,7 @@
                     <img
                     src="./images/portfolio/img (2).jpg"
                     alt="Ресторан Seafood"
-                    class="photo"/>
+                    class="portfolio__photo"/>
                     <div class="portfolio__overlay">
                       <p class="portfolio__description">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -122,7 +136,7 @@
                     <img
                     src="./images/portfolio/img (3).jpg"
                     alt="Проект Prime"
-                    class="photo"/>
+                    class="portfolio__photo"/>
                     <div class="portfolio__overlay">
                       <p class="portfolio__description">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -142,7 +156,7 @@
                     <img
                     src="./images/portfolio/img (4).jpg"
                     alt="Проект Boxes"
-                    class="photo"/>
+                    class="portfolio__photo"/>
                     <div class="portfolio__overlay">
                       <p class="portfolio__description">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -162,7 +176,7 @@
                     <img
                     src="./images/portfolio/img (5).jpg"
                     alt="Inspiration has no Borders"
-                    class="photo"/>
+                    class="portfolio__photo"/>
                     <div class="portfolio__overlay">
                       <p class="portfolio__description">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -182,7 +196,7 @@
                     <img
                     src="./images/portfolio/img (7).jpg"
                     alt="Видавництво Limited Edition"
-                    class="photo"/>
+                    class="portfolio__photo"/>
                     <div class="portfolio__overlay">
                       <p class="portfolio__description">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -202,7 +216,7 @@
                     <img
                     src="./images/portfolio/img (8).jpg"
                     alt="Проект LAB"
-                    class="photo"/>
+                    class="portfolio__photo"/>
                     <div class="portfolio__overlay">
                       <p class="portfolio__description">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -222,7 +236,7 @@
                     <img
                     src="./images/portfolio/img (9).jpg"
                     alt="Growing Business"
-                    class="photo"/>
+                    class="portfolio__photo"/>
                     <div class="portfolio__overlay">
                       <p class="portfolio__description">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.

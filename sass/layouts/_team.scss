@@ -72,8 +72,6 @@
     background-color: var(--primary-text-color);
 
     @media screen and (max-width: 767px) {
-        max-width: 450px;
-        height: 460px;
         width: 100%;
     }
 
@@ -88,5 +86,4 @@
         height: 260px;
         width: 100%;
     }
-
 }
