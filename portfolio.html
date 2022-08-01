@@ -22,14 +22,13 @@
         <nav class="page__nav">
           <a class="page__logo" href="./index.html"><span class="web-logo">Web</span>Studio</a>
          
-          <button class="mobile__menu-btn" type="button" data-menu-button>
-            <svg width="40" height="40">
-              <use clas="mobile__menu-btn-burger" href="./images/images-icons/menu.svg#icon-burger_menu">
+          <button class="mobile-menu-btn" type="button" data-menu-button>
+            <svg class="mobile-menu-btn__icon" width="40" height="40">
+              <use clas="mobile-menu-btn__burger" href="./images/images-icons/menu.svg#icon-burger_menu">
               </use>
-              <use clas="mobile__menu-btn-close" href="./images/images-icons/menu.svg#con-close_menu">
+              <use clas="mobile-menu-btn__close" href="./images/images-icons/menu.svg#icon-close_menu">
               </use>
             </svg>
-
           </button>
          
           <ul class="page__site-nav list">
@@ -319,7 +318,6 @@
           </div>
         </div>
         
-
         <div class="signup">
           <h3 class="title">Підпишіться на розсилку</h3>
           <form name="signup__form" class="signup__form">
@@ -336,5 +334,46 @@
       </div>
     </footer>
 
+     <!--Mobile-menu-->
+    <div class="mobile-menu is-open" data-menu>
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__nav-item">
+          <a href="./index.html" class="link accent">Студія</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="./portfolio.html" class="link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="" class="link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__contacts list">
+        <li class="mobile-menu__contacts-item">
+          <a href="tel:+380961111111" class="link accent">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__contacts-item ">
+          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        </li>
+      </ul>
+   
+      <ul class="mobile-menu__socials list">
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__icon" href="" aria-label="Instagram">Instagram</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__icon" href="" aria-label="Twitter">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__icon" href="" aria-label="Facebook">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__icon" href="" aria-label="LinkedIn">LinkedIn</a>
+        </li>
+      </ul>
+
+    </div>
+    
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

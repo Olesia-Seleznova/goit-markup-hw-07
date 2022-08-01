@@ -24,14 +24,14 @@
         <nav class="page__nav">
           <a class="page__logo" href="./index.html"><span class="web-logo">Web</span>Studio</a>
          
-          <button class="mobile__menu-btn" type="button" data-menu-button>
-            <svg width="40" height="40">
-              <use clas="mobile__menu-btn-burger" href="./images/images-icons/menu.svg#icon-burger_menu">
+          <button class="mobile-menu-btn" type="button" data-menu-button>
+            <svg class="mobile-menu-btn__icon" width="40" height="40">
+              <use clas="mobile-menu-btn__burger" href="./images/images-icons/menu.svg#icon-burger_menu">
               </use>
-              <use clas="mobile__menu-btn-close" href="./images/images-icons/menu.svg#con-close_menu">
+
+              <use clas="mobile-menu-btn_close" href="./images/images-icons/menu.svg#icon-close_menu">
               </use>
             </svg>
-
           </button>
          
           <ul class="page__site-nav list">
@@ -544,7 +544,7 @@
     <div class="mobile-menu is-open" data-menu>
       <ul class="mobile-menu__nav list">
         <li class="mobile-menu__nav-item">
-          <a href="./index.html" class="link current">Студія</a>
+          <a href="./index.html" class="link accent">Студія</a>
         </li>
         <li class="mobile-menu__nav-item">
           <a href="./portfolio.html" class="link">Портфоліо</a>
@@ -581,5 +581,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
